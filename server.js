@@ -9,11 +9,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/login', function (req, res) {
-    res.sendFile('login.html')
+    res.sendFile(__dirname + '/public/login.html')
 })
 
 app.get('/explore', function (req, res) {
-    res.sendFile('explore.html')
+    res.sendFile(__dirname + '/public/explore.html')
 })
 
 app.listen(port)
